@@ -1,5 +1,307 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+background-image: url(./images/cover-image-dark.png);
+background-color: var(--background-color);
+background-attachment: fixed;
+background-size: cover;
+background-position: center;
 }
+
+.header {
+display: grid;
+align-items: center;
+justify-items: end;
+height: 100vh;
+padding-top: 20px;
+}
+
+.header__theme-menu-list {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 10px;
+color: var(--text-color);
+font-family: var(--font-family);
+font-size: var(--font-size);
+}
+
+.header__theme-menu-button {
+background: none;
+border: none;
+padding: 2px 13px 2px 13px;
+font-weight: 400;
+text-transform: lowercase;
+color: var(--button-color);
+font-family: var(--font-family);
+font-size: var(--font-size);
+}
+
+.header__theme-menu-button_active {
+  outline: 1px solid var(--button-color);
+}
+
+.header__theme-menu-item:hover {
+ outline: 1px solid var(--hover-color);
+}
+
+
+.header_no-focus {
+justify-self: start;
+font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+font-weight: 700;
+color: var(--header-color);
+text-shadow: 6px 6px var(--shadow-color);
+font-family: var(--font-family);
+}
+
+.header_no-focus-text{
+margin-bottom: 200px;
+font-weight: 700;
+color: var(--text-color);
+font-family: var(--font-family);
+font-size: var(--font-size);
+line-height: var(--text-line-height);
+background-color: var(--bg-color);
+}
+
+
+.header_left {
+font-weight: 700;
+margin-bottom: 20px;
+color: var(--header_left-color);
+font-family: var(--font-family);
+font-size: var(--font-size);
+}
+
+
+.header_class {
+font-style: normal;
+font-weight: 700;
+margin-bottom:10px;
+color: var(--text-color);
+font-family: var(--font-family);
+font-size: var(--font-size);
+background-color: var(--bg-color);
+}
+
+.header_text {
+font-weight: 400;
+padding-bottom: 20px;
+color: var(--header-text-color);
+font-family: var(--font-family);
+font-size: var(--font-size);
+}
+
+
+.rec{
+position: absolute;
+text-transform: uppercase;
+top: 25px;
+right: 29px;
+font-weight: 400;
+color: var(--rec);
+font-family: var(--font-family);
+font-size: var(--font-size);
+}
+
+.rec::after {
+margin: 3px 0 0 10px;
+content: "";
+display:inline-block;
+width: 9px;
+height: 9px;
+border-radius: 5px;
+box-shadow: 0 0 4px 3px var(--rec);
+background-color: var(--rec);
+}
+
+.decorated-zone::before,
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+}
+
+.decorated-zone::before {
+top: 12px;
+right: 12px;
+border-top: 1px solid var(--border-color);
+border-right: 1px solid var(--border-color);
+}
+
+.decorated-zone::after {
+left: 12px;
+bottom: 12px;
+border-left: 1px solid var(--border-color);
+border-bottom: 1px solid var(--border-color);
+}
+
+.hard{
+display: grid;
+grid-template-columns: 1fr 2fr;
+}
+
+.concentration {
+display: grid;
+}
+
+.what{
+display: grid;
+}
+
+main {
+padding: 0px 20px 0px 20px;
+}
+
+.simple_tips {
+font-weight: 700;
+margin-bottom: 20px;
+color: var(--text-color);
+background-color: var(--bg-color);
+font-family: var(--font-family);
+font-size: var(--font-size);
+}
+
+.concentration-style{
+font-weight: 400;
+margin-bottom: 12px;
+}
+
+.image {
+display: grid;
+grid-template-columns: auto;
+inline-size: 100%;
+gap: 10px;
+}
+
+.image_pictures {
+  font-weight: 700;
+  margin-top: 50px;
+  inline-size: 100%;
+  gap: 10px;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+}
+
+.image_element{
+  inline-size: 100%;
+  gap: 10px;
+}
+
+.footer {
+  display: grid;
+  position: relative;
+  place-items: center;
+  height: 100vh;
+}
+
+.footer_focus { 
+  display: grid;
+  color: var(--footer-color);
+  text-shadow: 4px 4px 0px var(--shadow-color);
+  font-family: var(--font-family);
+  font-size: 157px;
+}
+
+@media ( width >= 768px ) {
+
+  .decorated-zone::before {
+    top: 21px;
+    right: 22px;
+  }
+  
+  .decorated-zone::after {
+    left: 21px;
+    bottom: 22px;
+  }
+
+  .header_position {
+    display: grid;
+    justify-content: end;
+  }
+
+ .concentration {
+  grid-template-columns: 1fr 2fr;
+  }
+
+ .image{
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  gap: 20px;
+  max-width: 100%;
+  margin-top: 77px;
+ }
+  
+ .image_pictures{
+  grid-column: span 3;
+  }
+
+  .image_element {
+    block-size: 100%;
+    object-fit: cover;
+  }
+
+  .image_element-sunset {
+    grid-column: span 2;
+  }
+
+  .image_element-ice-cream {
+    grid-row: span 2;
+  }
+  .image_element-tape {
+    grid-row: span 2;
+  }
+
+  .image_element-street {
+    grid-column: span 2;
+  }
+  .image_element-books {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .footer {
+    margin-top: 70px;
+  }
+}
+
+@media (width >= 1024px) {
+
+  .header__theme-menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 25px;
+    gap: 10px;
+  }
+
+ .header_position {
+  grid-template-columns: 64%;
+  }
+
+  .header_no-focus {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  .what_top-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+  }
+
+  .concentration {
+    margin-top: 89px;
+    column-gap: 10px;
+  }
+
+}
+
