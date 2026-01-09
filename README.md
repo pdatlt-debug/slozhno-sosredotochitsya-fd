@@ -1,1 +1,1 @@
-https://github.com/pdatlt/slozhno-sosredotochitsya-fd
+https://github.com/pdatlt-debug/slozhno-sosredotochitsya-fd
