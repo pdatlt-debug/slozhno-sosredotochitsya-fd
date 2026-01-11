@@ -4,41 +4,40 @@
   переключая тему
 */
 
-.page.theme_light {
-   background-image: url(./images/cover-image-light.png);
-  --font-family: 'IBM Plex Mono';
-  --text-color: #353430;
-  --font-size: 18px;
-  --header-text-color: #353430;
-  --header-color: #ffc2e6;
-  --header_left-color: #353430;
-  --button-color: #353430;
-  --hover-color: rgba(50, 49, 45, 0.40);
-  --border-color: #353430;
-  --rec: transparent;
-  --bg-color: #ff8dcb;
-  --background-color: #fff1f7;
-  --footer-color: #ffc2e6;
-  --shadow-color: #ff8dcb;
+:root.theme-light {
+--bg-image: url(../images/cover-image-light.png);
+--text-color: #353430;
+--font-size: 18px;
+--header-text-color: #353430;
+--header-color: #ffc2e6;
+--header-block-color: #353430;
+--button-color: #353430;
+--hover-color: rgba(50, 49, 45, 0.40);
+--border-color: #353430;
+--rec: transparent;
+--bg-color: #ff8dcb;
+--background-color: #fff1f7;
+--footer-color: #ffc2e6;
+--shadow-color: #ff8dcb;
+--line-height: line-height: 24px;
 }
+
 
 @media (prefers-color-scheme: light) {
 :root {
-  --header-text-color: #353430;
-  --button-color: #353430;
-  --hover-color: rgba(50, 49, 45, 0.40);
-  --font-family: 'IBM Plex Mono';
-  --header_left-color: #353430;
-  --border-color: #353430;
-  --rec: transparent;
-  --font-size: 18px;
-  --bg-color: #ff8dcb;
-  --background-color: #fff1f7;
-  --header-color: #ffc2e6;
-  --footer-color: #ffc2e6;
+--bg-image: url(../images/cover-image-light.png);
+--header-text-color: #353430;
+--button-color: #353430;
+--hover-color: rgba(50, 49, 45, 0.40);
+--header-block-color: #353430;
+--border-color: #353430;
+--rec: transparent;
+--font-size: 18px;
+--bg-color: #ff8dcb;
+--background-color: #fff1f7;
+--header-color: #ffc2e6;
+--footer-color: #ffc2e6;
+--line-height: line-height: 24px;
 }
-.page {
-    background-image: url(./images/cover-image-light.png);
 }
 
-}
