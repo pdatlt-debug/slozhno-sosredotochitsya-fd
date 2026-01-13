@@ -7,7 +7,7 @@
 --header-text-color: #F1B2CE;
 --button-color: #FF0070;
 --hover-color: rgba(255, 0, 112, 0.40);
---font-family: 'IBM Plex Mono', Arial, sans-serif;
+--font-family: 'IBM Plex Mono', Arial, monospace;
 --header-block-color: #FF0070;
 --border-color: #FF0070;
 --rec: #FF0070;
@@ -18,6 +18,8 @@
 --header-color: #db00ff;
 --footer-color: #db00ff;
 --shadow-color: #ff0070;
---line-height: line-height: 24px;
+--line-height:24px;
+--link-color: #ff0070;
+--link-style-color:#F1B2CE;
 }
 

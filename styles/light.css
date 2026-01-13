@@ -7,7 +7,6 @@
 :root.theme-light {
 --bg-image: url(../images/cover-image-light.png);
 --text-color: #353430;
---font-size: 18px;
 --header-text-color: #353430;
 --header-color: #ffc2e6;
 --header-block-color: #353430;
@@ -19,7 +18,8 @@
 --background-color: #fff1f7;
 --footer-color: #ffc2e6;
 --shadow-color: #ff8dcb;
---line-height: line-height: 24px;
+--link-color: #ff8dcb;
+--link-style-color: #353430;
 }
 
 
@@ -32,12 +32,12 @@
 --header-block-color: #353430;
 --border-color: #353430;
 --rec: transparent;
---font-size: 18px;
 --bg-color: #ff8dcb;
 --background-color: #fff1f7;
 --header-color: #ffc2e6;
 --footer-color: #ffc2e6;
---line-height: line-height: 24px;
+--link-color: #ff8dcb;
+--link-style-color: #353430;
 }
 }
 
