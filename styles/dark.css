@@ -5,20 +5,19 @@
 */
 
 :root.theme-dark {
---bg-image:url(../images/cover-image-dark.png);
---header-text-color: #F1B2CE;
---button-color: #FF0070;
---hover-color: rgba(255, 0, 112, 0.40);
---font-family: 'IBM Plex Mono', Arial, sans-serif;
---header-block-color: #FF0070;
---border-color: #FF0070;
---rec: #FF0070;
---bg-color: #FF0070;
---background-color: #000028;
---text-color: #000028;
---header-color: #db00ff;
---footer-color: #db00ff;
---shadow-color: #ff0070;
---link-color: #FF0070;
---link-style-color:#F1B2CE;
+  --bg-image: url(../images/cover-image-dark.png);
+  --header-text-color: #f1b2ce;
+  --button-color: #ff0070;
+  --hover-color: rgba(255, 0, 112, 0.4);
+  --header-block-color: #ff0070;
+  --border-color: #ff0070;
+  --rec: #ff0070;
+  --bg-color: #ff0070;
+  --background-color: #000028;
+  --text-color: #000028;
+  --header-color: #db00ff;
+  --footer-color: #db00ff;
+  --shadow-color: #ff0070;
+  --link-color: #ff0070;
+  --link-style-color: #f1b2ce;
 }

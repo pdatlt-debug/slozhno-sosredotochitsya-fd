@@ -5,39 +5,37 @@
 */
 
 :root.theme-light {
---bg-image: url(../images/cover-image-light.png);
---text-color: #353430;
---header-text-color: #353430;
---header-color: #ffc2e6;
---header-block-color: #353430;
---button-color: #353430;
---hover-color: rgba(50, 49, 45, 0.40);
---border-color: #353430;
---rec: transparent;
---bg-color: #ff8dcb;
---background-color: #fff1f7;
---footer-color: #ffc2e6;
---shadow-color: #ff8dcb;
---link-color: #ff8dcb;
---link-style-color: #353430;
+  --bg-image: url(../images/cover-image-light.png);
+  --text-color: #353430;
+  --header-text-color: #353430;
+  --header-color: #ffc2e6;
+  --header-block-color: #353430;
+  --button-color: #353430;
+  --hover-color: rgba(50, 49, 45, 0.4);
+  --border-color: #353430;
+  --rec: transparent;
+  --bg-color: #ff8dcb;
+  --background-color: #fff1f7;
+  --footer-color: #ffc2e6;
+  --shadow-color: #ff8dcb;
+  --link-color: #ff8dcb;
+  --link-style-color: #353430;
 }
-
 
 @media (prefers-color-scheme: light) {
-:root {
---bg-image: url(../images/cover-image-light.png);
---header-text-color: #353430;
---button-color: #353430;
---hover-color: rgba(50, 49, 45, 0.40);
---header-block-color: #353430;
---border-color: #353430;
---rec: transparent;
---bg-color: #ff8dcb;
---background-color: #fff1f7;
---header-color: #ffc2e6;
---footer-color: #ffc2e6;
---link-color: #ff8dcb;
---link-style-color: #353430;
+  :root {
+    --bg-image: url(../images/cover-image-light.png);
+    --header-text-color: #353430;
+    --button-color: #353430;
+    --hover-color: rgba(50, 49, 45, 0.4);
+    --header-block-color: #353430;
+    --border-color: #353430;
+    --rec: transparent;
+    --bg-color: #ff8dcb;
+    --background-color: #fff1f7;
+    --header-color: #ffc2e6;
+    --footer-color: #ffc2e6;
+    --link-color: #ff8dcb;
+    --link-style-color: #353430;
+  }
 }
-}
-

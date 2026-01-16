@@ -34,7 +34,7 @@
   color: var(--button-color);
   font-family: var(--font-family);
   font-size: var(--font-size);
-  line-height:var(--font-size);
+  line-height: var(--font-size);
 }
 
 .header__theme-menu-button_active {
@@ -55,17 +55,17 @@
 }
 
 .header_title {
-  margin-bottom: 40px ;
+  margin-bottom: 38px;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: 700;
   color: var(--header-color);
   text-shadow: 4px 4px 0px var(--shadow-color);
   font-family: var(--font-family);
-  line-height: 95%;
+  line-height: 83%;
 }
 
 .header_title-text {
-  margin-bottom: 85px;
+  margin-bottom: 70px;
   font-weight: 700;
   color: var(--text-color);
   font-family: var(--font-family);
@@ -76,6 +76,7 @@
 
 .header_block {
   font-weight: 700;
+  margin-top: 20px;
   margin-bottom: 20px;
   color: var(--header-block-color);
   font-family: var(--font-family);
@@ -84,6 +85,7 @@
 }
 
 .header_sub-block {
+  margin: 0px 0px 10px 0px;
   font-weight: 700;
   color: var(--text-color);
   font-family: var(--font-family);
@@ -111,13 +113,13 @@
   line-height: var(--line-height);
 }
 
-.header_text {
+.header_text:last-of-type {
   padding-bottom: 0;
 }
 
 .rec {
   position: absolute;
-  text-transform:uppercase;
+  text-transform: uppercase;
   top: 14px;
   right: 19px;
   font-weight: 400;
@@ -181,16 +183,9 @@
 .hard {
   display: grid;
 }
-
-.concentration {
-  display: grid;
-
-}
-
 .concentration_block {
-  padding-top: 12px;
+  margin-bottom: 20px;
 }
-
 .what {
   display: grid;
 }
@@ -208,11 +203,9 @@ main {
   margin-bottom: 12px;
 }
 
-
 article {
   margin-bottom: 20px;
 }
-
 .image {
   display: grid;
   grid-template-columns: auto;
@@ -221,7 +214,7 @@ article {
 
 .image_pictures {
   font-weight: 700;
-  margin-top: 50px;
+  margin-top: 30px;
   inline-size: 100%;
   gap: 10px;
   color: var(--text-color);
@@ -289,26 +282,23 @@ article {
 
   .hard {
     grid-template-columns: 1fr 2fr;
+    margin-top: 30px;
+    column-gap: 20px;
   }
 
   .what_block {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
     margin-top: 48px;
     padding-top: 0;
   }
 
   main {
-    padding: 0px 15px 0px 20px;
+    padding: 0px 20px 0px 20px;
   }
-
-  .concentration {
-    margin-top: 80px;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 20px;
-  }
-
   .concentration_block {
+    margin-top: 30px;
     padding: 0;
   }
 
